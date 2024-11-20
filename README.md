@@ -72,7 +72,7 @@ Syntax:
  CREATETABLE Table_Name(col_name1,col_name2,col_name3 DEFAULT ‘’);
 ```
 ```
-## Question 1:
+Question 1:
  Write a SQL Query for Creating a table name as "Employee" with the following attributes
  eid as primarykey with autoincrement
  name as varchar(50)
@@ -83,11 +83,11 @@ Syntax:
  eid INTEGER PRIMARYKEY AUTOINCREMENT,
  name VARCHAR(50),
  designation VARCHAR(30));
-
+```
  ## Output:
  ![Screenshot 2024-11-20 133220](https://github.com/user-attachments/assets/5ace40aa-eb89-49cf-b37e-63c5d5425955)
-
- ## Question 2:
+```
+ Question 2:
   Consider a situation already created a table "customer" from that create a new table
  "customerbackup" with all the attributes available in the table "customer"
  Create a table name as "customerbackup" with all the attributes available in the table "customer"
@@ -95,10 +95,11 @@ Syntax:
  Answer:
  CREATETABLE customerbackup AS
  SELECT *FROMcustomer;
-
+```
  ## Output:
- 
- ## Question 3:
+ ![Screenshot 2024-11-20 133325](https://github.com/user-attachments/assets/86792680-38eb-431f-89f2-b96ba62bd36e)
+```
+ Question 3:
   Write a SQL Query for creating a table "Students" which already exists so use proper keyword in
  order to avoid error message
  Create a table name as "Students" with the following attributes ,use default keyword in the
@@ -112,11 +113,11 @@ Syntax:
  id number,
  grade varchar(50),
  year integer);
-
+```
  ## Output:
  ![Screenshot 2024-11-20 133429](https://github.com/user-attachments/assets/d5790515-9e3e-4ea5-93ed-f212b3ec0ace)
-
- ## Question 4:
+```
+ Question 4:
  Create a table name as "Employee" with the following attributes
  eid as primarykey with autoincrement
  name as varchar(50)
@@ -132,21 +133,21 @@ Syntax:
  dob DATE,
  doj DATE,
  );
-
+```
  ## Output:
  ![Screenshot 2024-11-20 133516](https://github.com/user-attachments/assets/54cae8a2-9374-41a5-ad54-080b2e08a065)
-
- ## Question 5:
+```
+ Question 5:
  Write a SQL query to Add a new column mobilenumber as number in the Student_details table.
  
  Answer:
  ALTERTABLEStudent_details
  ADDmobilenumber number;
-
+```
  ## Output:
  ![Screenshot 2024-11-20 133609](https://github.com/user-attachments/assets/ef710e33-fce7-4490-b2e6-25855eb4abd8)
-
- ##  Question 6:
+```
+ Question 6:
  Write a SQL query to Add a new ParentsNumber column as number and Adhar_Number as
  Number in the Student_details table.
  
@@ -155,21 +156,21 @@ Syntax:
  ADDParentsNumber number;
  ALTERTABLEStudent_details
  ADDAdhar_Number number;
-
+```
  ## Output:
  ![Screenshot 2024-11-20 133653](https://github.com/user-attachments/assets/71108f3d-a808-4bac-b005-d336454f9a05)
-
- ## Question 7:
+```
+ Question 7:
  Write a SQL query to Add a new column Mobilenumber as number in the Student_details table.
  
  Answer:
  ALTERTABLEStudent_details
  ADDMobilenumber number;
-
+```
  ## Output:
  ![Screenshot 2024-11-20 133653](https://github.com/user-attachments/assets/5c6962cb-8d74-4cbe-9003-3bb61bd386cf)
-
- ## Question 8:
+```
+ Question 8:
  Write a SQL Query for inserting records with subquery
  Consider two tables, SourceTable and DestinationTable, where SourceTable contains information about
  individuals' ID, Name, and Age. Assume you want to insert records into DestinationTable from SourceTable
@@ -179,11 +180,11 @@ Syntax:
  INSERT INTO DestinationTable
  SELECT *FROMSourceTable
  WHEREName=='Kumar'
-
+```
  ## Output:
  ![Screenshot 2024-11-20 133949](https://github.com/user-attachments/assets/561a26dd-f5d1-40b4-b545-42f4efdc1db3)
-
-## Question 9:
+```
+Question 9:
  Write a SQL Query for inserting the below values as multiple row format in the table "Student"
  Note: In the Student Table attribute year set as default 3
  Sample Table:" Student"
@@ -197,11 +198,11 @@ Syntax:
  VALUES(5,'Sharvesh','Male','Botany',97,3);
  INSERT INTO Student
  VALUES(6,'Mathew','Male','Science',85,3);
-
+```
 ## Output:
 ![Screenshot 2024-11-20 134055](https://github.com/user-attachments/assets/f2066616-eb98-4976-96cb-b139c52c1342)
-
-## Question 10:
+```
+Question 10:
  Write a SQL query for inserting new customer details (customer_id, name, email) from the 'old_customers'
  table into the 'new_customers' table with the subquery. Ensure that only customer email as "---@gmail.com"are
  included in the transfer.
@@ -211,10 +212,10 @@ Syntax:
  SELECT customer_id , name,email
  FROMold_customers
  WHEREemail LIKE ‘%@gmail.com’
-
+```
  ## Output:
  ![Screenshot 2024-11-20 134142](https://github.com/user-attachments/assets/71ae72e6-edc8-46d8-94b1-1f02158a6d41)
-```
+
 
  ## Result:
  Thus , the SQL queries to implement different types of constraints and DDL commands have been executed
